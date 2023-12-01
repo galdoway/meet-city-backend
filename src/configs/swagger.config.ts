@@ -8,7 +8,7 @@ export const swaggerConfig = new DocumentBuilder()
 	.setVersion(process.env.npm_package_version || '1.0.0')
 	.addServer(
 		process.env.API_SERVER_BASE_URL || 'http://localhost:3000',
-		'API Server URL',
+		'API Server Base URL',
 	)
 	.addBearerAuth()
 	.build();
