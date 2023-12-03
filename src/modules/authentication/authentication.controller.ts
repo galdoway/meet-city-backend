@@ -45,7 +45,7 @@ export class AuthenticationController {
         audience: this.configService.getOrThrow<string>(
           'JWT_ACESS_TOKEN_AUDIENCE',
         ),
-        issuer: this.configService.getOrThrow<string>('API_SERVER_URL'),
+        issuer: this.configService.getOrThrow<string>('API_BASE_URL'),
         encoding: 'utf8',
       },
     );
@@ -89,7 +89,7 @@ export class AuthenticationController {
         audience: this.configService.getOrThrow<string>(
           'JWT_ACESS_TOKEN_AUDIENCE',
         ),
-        issuer: this.configService.getOrThrow<string>('API_SERVER_URL'),
+        issuer: this.configService.getOrThrow<string>('API_BASE_URL'),
         encoding: 'utf8',
       },
     );

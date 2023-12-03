@@ -5,12 +5,14 @@ import { IsEmail, IsStrongPassword } from 'class-validator';
 export class SignUpLocalDto implements Pick<User, 'email' | 'password'> {
   @ApiProperty({
     description: "User's email",
+    example: 'me@email.com',
   })
   @IsEmail()
   email: string;
 
   @ApiProperty({
     description: "User's strong password",
+    example: 'MySecretPassword!',
   })
   @IsStrongPassword()
   password: string;
