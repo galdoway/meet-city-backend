@@ -4,6 +4,7 @@ import { validationSchema } from './configs/';
 import { UsersModule } from './modules/users/users.module';
 import { AuthenticationModule } from './modules/authentication/authentication.module';
 import { AuthorizationModule } from './modules/authorization/authorization.module';
+import { MeetingsModule } from './modules/meetings/meetings.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { AuthorizationModule } from './modules/authorization/authorization.modul
     UsersModule,
     AuthenticationModule,
     AuthorizationModule,
+    MeetingsModule,
   ],
   controllers: [],
   providers: [],
